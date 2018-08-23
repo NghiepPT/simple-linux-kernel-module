@@ -8,13 +8,19 @@ We will create a simple C program as below with name is helloworld.c. When loadi
 In order to compile a linux kernel module, we will create a make file as below:
 
 $ obj-m += helloworld.o 
+
 $ all: make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules 
+
 $ clean: make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+
 
 ## Loading and unloading a linux kernel module
 Now we can insert the module to test it. To do this, run:
+
 $ sudo insmod helloworld.ko 
+
 To remove the module, run:
+
 $ sudo rmmod helloworld
 
 ## Conclusion
