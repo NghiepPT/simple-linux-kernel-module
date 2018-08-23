@@ -19,4 +19,4 @@ sudo rmmod helloworld
 
 ## Conclusion
 I hope you’ve enjoyed our romp through kernel land. Though the examples I’ve provided are basic, you can use this structure to construct your own module that does very complex tasks.
-You can check detail at here:
+You can check detail at here: http://sandan.live/index.php/2018/08/20/how-to-make-a-simple-kernel-module/
